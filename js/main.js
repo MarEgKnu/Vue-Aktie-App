@@ -3,7 +3,17 @@ const app = Vue.createApp({
     data() {
 
         return {
-            intro: "Welcome to my vue template"
+            Shares: [
+                {
+                    Name: "Unknown",
+                    BuyPrice: 0,
+                    SellPrice: 0,
+                    Amount: 0,
+                    Sum: 0,
+                },
+                
+                
+            ]
         }
 
     },

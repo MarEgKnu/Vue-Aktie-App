@@ -9,12 +9,37 @@
     <!-- Import Styles -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-    
-    <div id="app">
-        <h1>{{ intro }}</h1>
+<body id="app">
+    <table class="sharetable">
+        <tr>
+          <th>Company name</th>
+          <th>Købpris</th>
+          <th>Salgspris</th>
+          <th>Antal</th>
+          <th>Total</th>
+        </tr>
+        <tr v-for="(share, index) in Shares" :key="index">
+            <td>
+                {{share.Name}}
+            </td>
+            <td>
+                {{share.BuyPrice}}
+            </td>
+            <td>
+                {{share.SellPrice}}
+            </td>
+            <td>
+                {{share.Amount}}
+            </td>
+            <td>
+                {{share.Sum}}
+            </td>
+        </tr>
+      </table>
+     <!--<div v-for="(share, index) in Shares" :key="index" class="row">
+
     </div>
-    <!-- Import Javascript -->
+    Import Javascript -->
     <script src="./js/main.js"></script>
     <!-- Mount App --> 
      <script> 

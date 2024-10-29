@@ -1,6 +1,18 @@
-h1 {
-    color:aquamarine;
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    vertical-align: middle;
+    margin: 5px;
+
+
+}
+table, th, td {
+    border: 1px solid;
     text-align: center;
-    
-    
+  }
+table {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
